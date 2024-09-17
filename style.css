@@ -590,6 +590,23 @@ body{
         display: block;
         width: 70vw;
         opacity: 70%;
+        animation: trav 3s linear infinite;
+    }
+    @keyframes trav {
+        0% {
+            opacity: 0;
+            left: 0%;
+        }
+        20% {
+            opacity: 1;
+        }
+        90% {
+            opacity: 1;
+        }
+        100% {
+            opacity: 0;
+            left: 0%; 
+        }
     }
     .home-v-back{
         display: none;
