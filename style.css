@@ -175,6 +175,9 @@ body{
 .USAG{
     display: none;
 }
+.trav{
+    display: none;
+}
 .home-v-back{
     width: 120vw;
     height: 110vh;
@@ -526,7 +529,7 @@ body{
         width: 100vw;
         height: 100vh;
         z-index: 10;
-        padding-top: 20vh;
+        padding-top: 15vh;
     }
     .links-header li{
         background-color: #ff000000;
@@ -582,6 +585,11 @@ body{
     }
     .USAG{
         display: block;
+    }
+    .trav{
+        display: block;
+        width: 80vw;
+        opacity: 70%;
     }
     .home-v-back{
         display: none;
