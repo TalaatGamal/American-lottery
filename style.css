@@ -504,6 +504,9 @@ body{
     text-align: center;
     box-shadow: #000000 0px -20px 20px 0px;
 }
+.home-m-back{
+    display: none;
+}
 /* Responsive Styles */
 @media (max-width: 768px) {
     .home{
@@ -592,7 +595,7 @@ body{
     .trav{
         display: block;
         width: 70vw;
-        opacity: 70%;
+        opacity: 60%;
         animation: trav 3s linear infinite;
         cursor: none;
     }
@@ -602,10 +605,10 @@ body{
             left: 0%;
         }
         20% {
-            opacity: 1;
+            opacity: 60%;
         }
         90% {
-            opacity: 1;
+            opacity: 60%;
         }
         100% {
             opacity: 0;
@@ -614,6 +617,15 @@ body{
     }
     .home-v-back{
         display: none;
+    }
+    .home-m-back{
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: -20vw;
+        width: 120vw;
+        height: 100vh;
+        opacity: 55%;
     }
     .logo-links img{
         margin-right: 20px;
