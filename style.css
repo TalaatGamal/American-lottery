@@ -167,9 +167,9 @@ body{
 }
 .links-header a:hover{
     animation: blink 0s infinite;
-    border-left: #009dffa6 solid 3px;
-    border-right: #009dffa9 solid 3px;
-    background-color: #009dff2d;
+    /* border-left: #009dff31 solid 10px;
+    border-right: #009dff2b solid 10px; */
+    background-color: #022e4656;
     padding: 6px;
 }
 .USAG{
@@ -500,6 +500,12 @@ body{
 }
 /* Responsive Styles */
 @media (max-width: 768px) {
+    .home{
+        background-image: url(https://images.pexels.com/photos/12589500/pexels-photo-12589500.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        background-position: 90%;
+        background-size: 200%;
+        background-position-y:top ;
+    }
     #nav-links {
         display: none;
         flex-direction: column;
@@ -532,14 +538,19 @@ body{
         padding: 20px;
         border-bottom: #74dfff78 solid 4px;
         border-radius: 20px;
+        transition: 0.2s;
     }
+    /* .links-header li:hover{
+        background-color: #009dab13;
+    } */
     .links-header a{
         /* margin-top: 20px; */
-        background-color: #0000005e;
+        /* background-color: #0000005e; */
         width: 100vw;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: center;   
+        transition: 0.2s;
     }
     .img-div img{
         width: 6vw;
