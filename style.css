@@ -1,0 +1,601 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    width: 100vw;
+    height:max-content;
+    /* min-height: 200vh; */
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    background-image: url(https://media.istockphoto.com/id/1007705348/photo/happy-women-in-hats-with-american-flag-in-park.jpg?s=2048x2048&w=is&k=20&c=2RAeCAcSCRxaxADjpKBoI2j5T9uLz__rHGKGUbx0mco=);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+.container{
+    width: 100vw;
+    height: max-content;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.716);
+    color: #ffffff;
+}
+.header{
+    background-color: rgba(0, 0, 0, 0.162);
+    border-bottom: #505050 solid 2px;
+    height: 8vh;
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    z-index: 9;
+    overflow: hidden;
+}
+.header a{
+    color: #ffffff;
+    text-decoration: none;
+}
+.content-header{
+    width: 100vw;
+    height: 8vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    /* background-color: #009dff; */
+}
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+.logo-div{
+    background-color: rgba(0, 255, 255, 0);
+    width: 50%;
+    height: 8vh;
+}
+.content-logo-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(195, 159, 159, 0);
+}
+.content-logo-div a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: max-content;
+}
+.content-logo-div img{
+    width: 3vw;
+    margin-right: 1vw;
+}
+.u{
+    color: #ff3f3f;
+}
+.s{
+    color: #009dff;
+}
+.links-div{
+    background-color: rgba(0, 82, 82, 0);
+    width: 50%;
+    height: 8vh;
+}
+.content-links-div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 0, 0, 0);
+}
+.links-header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0);
+    /* gap: 30px; */
+    list-style: none;
+}
+
+                                                      /* بداية التاثير الضوءي باللون الازرق */
+
+/* .links-header a {
+    animation: blink 2s infinite;
+    transition: 0.4s;
+}
+@keyframes blink {
+    0%, 100% {
+        color: white;
+    }
+    50% {
+        color: rgb(0, 179, 255);
+    }
+}
+.links-header li:nth-child(1) a{
+    animation-delay: 0s;
+}
+
+.links-header li:nth-child(2) a{
+    animation-delay: 0.5s;
+}
+
+.links-header li:nth-child(3) a{
+    animation-delay: 1s;
+}
+
+.links-header li:nth-child(4) a{
+    animation-delay: 1.5s;
+}
+
+.links-header li:nth-child(5) a{
+    animation-delay: 2s;
+} */
+
+                                                        /*  نهاية التاثير الضوءي باللون الازرق */
+
+.links-header li img{
+    width: 50px;
+}
+.links-header li{
+    /* background-color: #009dff; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.links-header a:hover{
+    animation: blink 0s infinite;
+    border-left: #009dffa6 solid 3px;
+    border-right: #009dffa9 solid 3px;
+    background-color: #009dff2d;
+    padding: 6px;
+}
+.USAG{
+    display: none;
+}
+.home-v-back{
+    width: 120vw;
+    height: 110vh;
+    z-index: 0;
+    position: absolute;
+    top: 0px;
+    left: -10vw;
+    opacity: 10%;
+}
+.home{
+    background-color: rgba(0, 0, 0, 0);
+    width: 100vw;
+    height: max-content;
+    min-height: 100vh;
+    background-image: url(https://images.pexels.com/photos/16701109/pexels-photo-16701109/free-photo-of-jefferson-memorial-in-washington-dc.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    /* background-image: url(https://images.pexels.com/photos/129112/pexels-photo-129112.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
+    /* background-image: url(https://images.unsplash.com/photo-1473090826765-d54ac2fdc1eb?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.home-content{
+    background-color: #0000007e;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: max-content;
+    min-height: 100vh;
+    z-index: 1;
+}
+.text-home-content{
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+.text-div{
+    background-color: rgba(127, 255, 212, 0);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    text-align: center;
+    padding-top: 33vh;
+
+}
+.img-home-content{
+    background-color: rgb(255, 0, 0);
+    width: 0%;
+    height: 100vh;
+}
+.img-div{
+    background-color: rgba(0, 85, 57, 0);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.img-div img{
+    width: 2.5vw;
+    /* transform: rotate(-55deg);  */
+    position: absolute;
+    top: 12%;
+    left: -100%; /* بدء الصورة خارج الشاشة من اليسار */
+    transform: translateY(-50%);
+    animation: moveImage 20s linear infinite;
+    z-index: 8;
+}
+
+@keyframes moveImage {
+    0% {
+        left: -1%;
+    }
+    100% {
+        left: 120%; /* نهاية الصورة خارج الشاشة من اليمين */
+    }
+}
+.media-home-content{
+    width: 0vw;
+    height: 0vh;
+}
+.media-div{
+    width: 0vw;
+    height: 0vh;
+}
+.media{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    position: absolute;
+    top: 90vh;
+    right: 10vw;   
+    gap: 20px;
+    list-style: none;
+    /* background-color: #0095ff00; */
+    z-index: 7;
+}
+.media a{
+    text-decoration: none;
+}
+.media i{
+    font-size: 25px;
+    color: #ffffff79;
+    background-color: #009dff00;
+}
+.arrow-home-content{
+    width: 0vw;
+    height: 0vh;
+}
+.arrow-home-content a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.arrow-div{
+    width: max-content;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #009dff00;
+    position: absolute;
+    top: 90vh;
+    left: 47.4vw;
+    /* color: #72bbff; */
+}
+.arrow-div h3{
+    font-size: 15px;
+    margin-bottom: 10px;
+    animation: move-arrow-in 2s linear infinite;
+}
+
+
+.arrow {
+    position: relative;
+    /* top: 95vh;
+    left: 48.9vw; */
+    animation: move-arrow-in 2s linear infinite;
+    width: 2vw; 
+    height: 2vh;
+    background-color: #00909d00;
+}
+@keyframes move-arrow-in {
+    0% {
+        opacity: 0;
+        transform: translateY(0%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(0%);
+    }
+}
+.a-o-m{
+    color: #72bbff;
+    /* background-color: #009dff; */
+    animation: move-arrow-gb 5s linear infinite;
+}
+@keyframes move-arrow-gb {
+    0% {
+        opacity: 0;
+        transform: translateY(0%);
+    }
+    20% {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(0%);
+    }    
+    90% {
+        opacity: 1;
+        transform: translateY(0%);
+    }    
+    100% {
+        opacity: 0;
+        transform: translateY(0%);
+    }
+}
+/* .a-o-m h3{
+    position: absolute;
+    animation: hmhvav 10s linear infinite;
+    font-size: 27px;
+    top: 32.5vh;
+}
+@keyframes hmhvav {
+    0% {
+        opacity: 0;
+        left: -1%;
+    }
+    20%{
+        opacity: 1;
+        left: 30%;
+    }
+    50%{
+        opacity: 1;
+        left: 30%;
+    }
+    100% {
+        opacity: 0;
+        left: 30%; /* نهاية الصورة خارج الشاشة من اليمين
+    }
+} */
+.submission{
+    background-color: #0000006c;
+    width: 100vw;
+    height: max-content;
+    min-height: 100vh;
+    overflow: hidden;
+}
+.submission-content{
+    width: 100vw;
+    height: max-content;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.submission-div{
+    background-color: #50505000;
+    width: 50vw;
+    height: 100vh;
+    padding-top: 10vh;
+    border-right: #0095ff86 solid 4px;
+}
+.submission-div-content{
+    width: 50vw;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 1px;
+    overflow: hidden;
+  }
+  .subm{
+    text-align: left;
+    font-size: x-large;
+  }
+  .subm li{
+    margin-bottom: 40px;
+  }
+  .btn-subm{
+    background-color: #e2000000;
+    height: 30vh;
+    width: 15vw;
+    margin: 5px;
+  }
+  .btn-subm-content{
+    background-color: #e2000000;
+    height: 30vh;
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .btn-subm-content button{
+    background-color: #ffffff00;
+    border-radius: 20px;
+    border: #ff000000 solid 2px;
+    overflow: hidden;
+    width: 10vw;
+  }
+  #btns-chrome{
+    color: #c2c2c27e;
+  }
+  .btn-subm-content i{
+    color: #ff0000;
+    background-color: #ffffff00;
+    font-size: 60px;
+    border-radius: 20px;
+  }
+  .result-div{
+    background-color: #6c6c6c00;
+    width: 50vw;
+    height: 100vh;
+    padding-top: 10vh;
+    border-left: #ff000070 solid 4px;
+  }
+  .btns{
+    background-color: #e2000000;
+    width: 50vw;
+  }
+  .btns-content{
+    display: flex;
+    flex-direction: row;
+    width: 50vw;
+    align-items: center;
+    justify-content: center;
+    background-color: #009dff00;
+    padding-right: 5vw;
+  }
+  .btns-tube{
+    font-size: 30px;
+  }
+  .btns-chrome{
+    font-size: 30px;
+  }
+  .footer{
+    background-color: #000000c8;
+    width: 100vw;
+    height: 5vh;
+  }
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 5vh;
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    #nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .menu-icon {
+        display: block;
+        z-index: 11;
+    }
+
+    #nav-links.active {
+        display: flex;
+        background-color: #000000dc;
+        position: fixed;
+        top: 0vh;
+        left: 0px;
+        width: 100vw;
+        height: 100vh;
+        z-index: 10;
+        padding-top: 10vh;
+    }
+    .links-header li{
+        background-color: #ff000000;
+        height: 100%;
+        width: 60vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        border-bottom: #74dfff78 solid 4px;
+        border-radius: 20px;
+    }
+    .links-header a{
+        /* margin-top: 20px; */
+        background-color: #0000005e;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-div img{
+        width: 6vw;
+        /* transform: rotate(-55deg);  */
+        position: absolute;
+        top: 10.5%;
+        left: -100%; /* بدء الصورة خارج الشاشة من اليسار */
+        transform: translateY(-50%);
+        animation: moveImage 10s linear infinite;
+        z-index: 8;
+    }
+    @keyframes moveImage {
+        0% {
+            opacity: 0;
+            left: 0%;
+        }
+        20% {
+            opacity: 1;
+            /* left: 10%; */
+        }
+        90% {
+            opacity: 1;
+            /* left: 10%; */
+        }
+        100% {
+            opacity: 0;
+            left: 90%; /* نهاية الصورة خارج الشاشة من اليمين */
+        }
+    }
+    .USAG{
+        display: block;
+    }
+    .home-v-back{
+        display: none;
+    }
+    .logo-links img{
+        margin-right: 20px;
+    }
+    .content-logo-div img{
+        width: 10vw;
+        margin-right: 10px;
+    }
+    .logo-div{
+        width: max-content;
+        z-index: 11;
+    }
+    .arrow {
+        width: 5vw;
+    }
+    .arrow-div{
+        /* background-color: #009dff; */
+        width: 100vw;
+        left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 5;
+    }
+}
