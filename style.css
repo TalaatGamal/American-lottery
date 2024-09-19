@@ -81,7 +81,7 @@ body{
     flex-direction: row;
     align-items: center;
     width: max-content;
-    background: linear-gradient(to right, red, blue, white, white);
+    background: linear-gradient(to right, rgb(255, 77, 77), rgb(113, 113, 255), white, white);
     -webkit-background-clip: text;
     color: transparent;
 }
@@ -98,11 +98,6 @@ body{
 }
 .s{
     color: #009dff;
-}
-.gradient-text {
-    /* background: linear-gradient(to right, red, blue, white,white);
-    -webkit-background-clip: text;
-    color: transparent; */
 }
 .links-div{
     background-color: rgba(0, 82, 82, 0);
