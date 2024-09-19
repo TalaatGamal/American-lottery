@@ -81,9 +81,16 @@ body{
     flex-direction: row;
     align-items: center;
     width: max-content;
+    background: linear-gradient(to right, red, blue, white, white);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.content-logo-div a i{
+    font-size: 40px;
+    margin-right: 10px;
 }
 .content-logo-div img{
-    width: 3vw;
+    width: 45px;
     margin-right: 1vw;
 }
 .u{
@@ -91,6 +98,11 @@ body{
 }
 .s{
     color: #009dff;
+}
+.gradient-text {
+    /* background: linear-gradient(to right, red, blue, white,white);
+    -webkit-background-clip: text;
+    color: transparent; */
 }
 .links-div{
     background-color: rgba(0, 82, 82, 0);
@@ -171,6 +183,10 @@ body{
     border-right: #009dff2b solid 10px; */
     background-color: #022e4656;
     padding: 6px;
+}
+.links-header a{
+    transition: 0.5s;
+    min-width: max-content;
 }
 .USAG{
     display: none;
@@ -391,104 +407,6 @@ body{
         left: 30%; /* نهاية الصورة خارج الشاشة من اليمين
     }
 } */
-.submission{
-    background-color: #0000006c;
-    width: 100vw;
-    height: max-content;
-    min-height: 100vh;
-    overflow: hidden;
-}
-.submission-content{
-    width: 100vw;
-    height: max-content;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-}
-.submission-div{
-    background-color: #50505000;
-    width: 50vw;
-    height: 100vh;
-    padding-top: 10vh;
-    border-right: #0095ff86 solid 4px;
-}
-.submission-div-content{
-    width: 50vw;
-    height: 100vh;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    padding: 1px;
-    overflow: hidden;
-  }
-  .subm{
-    text-align: left;
-    font-size: x-large;
-  }
-  .subm li{
-    margin-bottom: 40px;
-  }
-  .btn-subm{
-    background-color: #e2000000;
-    height: 30vh;
-    width: 15vw;
-    margin: 5px;
-  }
-  .btn-subm-content{
-    background-color: #e2000000;
-    height: 30vh;
-    width: 15vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .btn-subm-content button{
-    background-color: #ffffff00;
-    border-radius: 20px;
-    border: #ff000000 solid 2px;
-    overflow: hidden;
-    width: 10vw;
-  }
-  #btns-chrome{
-    color: #c2c2c27e;
-  }
-  .btn-subm-content i{
-    color: #ff0000;
-    background-color: #ffffff00;
-    font-size: 60px;
-    border-radius: 20px;
-  }
-  .result-div{
-    background-color: #6c6c6c00;
-    width: 50vw;
-    height: 100vh;
-    padding-top: 10vh;
-    border-left: #ff000070 solid 4px;
-  }
-  .btns{
-    background-color: #e2000000;
-    width: 50vw;
-  }
-  .btns-content{
-    display: flex;
-    flex-direction: row;
-    width: 50vw;
-    align-items: center;
-    justify-content: center;
-    background-color: #009dff00;
-    padding-right: 5vw;
-  }
-  .btns-tube{
-    font-size: 30px;
-  }
-  .btns-chrome{
-    font-size: 30px;
-  }
   .footer{
     background-color: #000000c8;
     width: 100vw;
@@ -510,10 +428,25 @@ body{
 /* Responsive Styles */
 @media (max-width: 768px) {
     .home{
-        background-image: url(https://images.pexels.com/photos/12589500/pexels-photo-12589500.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-        background-position: 90%;
-        background-size: 200%;
-        background-position-y:top ;
+        background-image: url(https://images.pexels.com/photos/5847366/pexels-photo-5847366.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        /* background-image: url(https://images.pexels.com/photos/12589500/pexels-photo-12589500.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
+        background-position: center;
+        background-size: cover;
+        background-position-y: 20%;
+    }
+    .home-content{
+        background-color: #000000bd;
+    }
+    .text-div{
+        background-color: rgba(127, 255, 212, 0);
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding-top: 20vh;
+    
     }
     #nav-links {
         display: none;
@@ -562,10 +495,10 @@ body{
         transition: 0.2s;
     }
     .img-div img{
-        width: 6vw;
+        width:40px;
         /* transform: rotate(-55deg);  */
-        position: absolute;
-        top: 10.5%;
+        position: fixed;
+        top: 11.5%;
         left: -100%; /* بدء الصورة خارج الشاشة من اليسار */
         transform: translateY(-50%);
         animation: moveImage 10s linear infinite;
@@ -631,7 +564,7 @@ body{
         margin-right: 20px;
     }
     .content-logo-div img{
-        width: 10vw;
+        width: 50px;
         margin-right: 10px;
     }
     .logo-div{
