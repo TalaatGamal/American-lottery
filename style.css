@@ -81,9 +81,9 @@ body{
     flex-direction: row;
     align-items: center;
     width: max-content;
-    /* background: linear-gradient(to right, rgb(255, 77, 77), rgb(113, 113, 255), white, white);
+    background: linear-gradient(to right, rgb(255, 77, 77), rgb(113, 113, 255), white, white);
     -webkit-background-clip: text;
-    color: transparent; */
+    color: transparent;
 }
 .content-logo-div a i{
     font-size: 40px;
